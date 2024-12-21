@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px auto auto;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "navbar navbar" "side home" "footer footer"; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+  }
+  .navbar {
+    grid-area: navbar;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  .nl{
+    display: flex;
+    justify-content: center;
+  }
+  .na1 {
+    display: flex;
+    
+  }
+  .navbar a{
+    padding-left: 25px;
+    padding-right: 25px;
+    
+  }
+  .n:hover{
+    cursor: pointer;
+    background-color: black;
+    color: greenyellow;
+    display: inline;
+  }
+  .side {
+    grid-area: side;
+    flex-wrap: wrap; 
+    align-items: center;
+   text-align: center; 
+  }
+  .side-u{
+   height: 45vh;
+   justify-content: space-between;
+   padding-top: 10vh;
+   flex-wrap: wrap;
+  }
+  .side-l{
+    height: 45vh;
+    justify-content: space-between;
+    padding-top: 10vh;
+    flex-wrap: wrap;
+   }
+  li{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    list-style-type: none;
+    flex-wrap: wrap;
+  }
+  .home {
+    grid-area: home;
+    flex-wrap: wrap;
+    padding-top: 40px;
+  }
+  .home h1{
+    align-items: center;
+    text-align: center;
+  }
+  .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: "contact details social";
+    flex-wrap: wrap;
+  }
+  a{
+      text-decoration: none;
+  }
+  img{
+    height: 350px;
+  }
+  .items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .product{
+    align-items: center;
+    margin-left: 10px;
+    height: 500px;
+    align-items: center;
+    transition: 1s;
+  }
+  .b{
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    left: 70px;
+    border-radius: 20px ;
+    background-color: rgb(170, 243, 36);
+  }
+  p{
+    text-align: center;
+  }
+  .filter{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+  }
+  select{
+    border: none;
+    display: flex;
+  }
+  .product:hover{
+    transform: scale3d(0.3);
+    transform: scale(1.1); 
+  }
+  @media(max-width:800px){
+    .side{
+      width: 100px;
+    }
+  }
+  @media(max-width:500px){
+    *{
+      margin:0px;
+      padding: 0px;
+    }
+    .container{
+      font-size: 10px;
+      width: 100vw;
+    }
+    .side{
+      width: 50px;
+      font-size: 12px;
+    }
+    .product{
+      height: 250px;
+      margin-left: 40px;
+    }
+    .product img{
+      height: 200px;
+    }
+    .home h1{
+      align-items: center;
+      text-align: center;
+    }
+    .filter{
+      align-items: center;
+      text-align: center; 
+    }
+    .footer{
+      width: auto;
+      flex-wrap: wrap;
+    }
+    .details table{
+      width: 150px;
+      border-spacing: 15px;
+    }
+    .socialmedia h1{ 
+      font-size: 10px;
+    }
+    .socialmedia img{
+      height: 15px;
+    }
+  }
+  .contact{
+    grid-area: contact;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 45px;
+    border:solid black;
+  }
+  .details{
+    grid-area: details;
+    border: solid black;
+  }
+  .socialmedia{
+      grid-area: social;
+      text-align: center;
+      font-size: 10PX;
+      position: relative;
+      padding-top: 10px;
+      border: solid black;
+  }
+  .socialmedia img{
+    height:20px;
+    position: relative;
+    top: 30px;
+  }
+  table{
+    border-spacing: 50px;
+    border-style: hidden; 
+  }  
