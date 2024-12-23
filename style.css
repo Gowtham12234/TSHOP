@@ -1,10 +1,5 @@
-*{
-  margin:0px;
-  padding: 0px;
-  
-}
 body{
-  overflow-x: hidden;
+  
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .container{ 
@@ -36,7 +31,7 @@ body{
 .mainhead{
   margin-top: 25px;
   margin-bottom: 25px;
-  width: 100vw;
+  
   align-items: center;
   text-align: center;
   position:block;
@@ -79,6 +74,12 @@ body{
     align-items: center;
     text-align: center;
   }
+  .cover{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .products img{
     height: 450px;
   }
@@ -87,19 +88,48 @@ body{
   }
   .items{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    transition: ease-out;
-  }
-  .prom-l{
-    width: 50px;
+    text-align: center;
+    align-items: center;
   }
   .prom{
     display: flex;
     flex-wrap: wrap;
+
+  }
+  .prom-l{
+   text-align: center;
+   align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     
   }
+  .prom-r{
+    
+  }
+  .prom-r img{
+
+    height: 500px;
+    width: 400px;
+    flex-wrap: wrap;
+  }
+  .footer{
+    display: flex;
+    
+    flex-wrap: wrap;
+  }
+  .socialmedia{
+    display: flex;
+    flex-direction: row;
 }
+.f{
+  width: 150vw;
+}
+}
+
 .items h1{
   width: 100vw;
   align-items: center;
@@ -107,42 +137,40 @@ body{
 }
 
 .footer {
+  width: 100vw;
   grid-area: footer;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 15% 70% 15%;
+  grid-template-columns: 15% auto 15%;
   grid-template-areas: "contact details social";
   flex-wrap: wrap;
 }
 .prom{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .prom-l{
   width: 50vw;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center; 
+  justify-content: center;
 }
 .prom-r{
   width: 50vw;
   text-align: center;
+  
 }
-.text{
-  align-items: center;
-  margin-left: 25vh;
-  font-size: 25px;
-  text-align: center;
-}
-.prom-r img{
- height: 650px;
- width:40vw;
-}
+
+
 
 .b{
   position: relative;
-  left: 45vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   margin-bottom: 35px;
   
 }
