@@ -12,18 +12,21 @@ body{
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap; 
+  align-items: center;
 }
 .nl{
   display: flex;
-  justify-content: center;
+ 
 }
-.navbar a{
-  padding-left: 25px;
-  padding-right: 25px;
-  
+.nr{
+  width: 50vw;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
 }
 .nr a{
   text-decoration: none;
+  
 }
 .main{
   grid-area: main;  
@@ -68,6 +71,11 @@ body{
 }
 
 @media(max-width:1441px) {
+  .navbar{
+    width: 100vw;
+    display: flex;
+
+  }
   .cover img {
     height: 550px;
     width: 450px;
@@ -102,12 +110,8 @@ body{
    text-align: center;
    align-items: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    
-  }
-  .prom-r{
     
   }
   .prom-r img{
@@ -122,11 +126,13 @@ body{
     flex-wrap: wrap;
   }
   .socialmedia{
-    display: flex;
-    flex-direction: row;
+    border: solid black;
 }
 .f{
-  width: 150vw;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+ 
 }
 }
 
@@ -137,7 +143,7 @@ body{
 }
 
 .footer {
-  width: 100vw;
+  width: 100%;
   grid-area: footer;
   display: grid;
   grid-template-rows: auto;
@@ -153,7 +159,7 @@ body{
 .prom-l{
   width: 50vw;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   flex-wrap: wrap;
   align-items: center; 
   justify-content: center;
@@ -163,7 +169,12 @@ body{
   text-align: center;
   
 }
-
+.f{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  border: solid black;
+}
 
 
 .b{
@@ -184,19 +195,18 @@ body{
   color: white;
   text-align: center;
   padding-top: 45px;
-  border:solid black;
+  
 }
 .details{
   grid-area: details;
   border: solid black;
 }
 .socialmedia{
-    grid-area: social;
-    text-align: center;
-    font-size: 10PX;
-    position: relative;
-    padding-top: 10px;
-    border: solid black;
+  grid-area: social;
+  text-align: center;
+  font-size: 10PX;
+  position: relative;
+  padding-top: 10px;
 }
 .socialmedia img{
   height:20px;
